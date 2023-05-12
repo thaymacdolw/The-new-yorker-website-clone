@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Grafik;
+    src: url(Graphik-Regular-Trial.otf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Grafik;
+}
+
+:root {
+    --cor0: #000;
+    --cor1: #242424;
+    --cor3: #0787ca;
+    
+
+    --fonte-padrao: Graphik, "Helvetica Neue", Helvetica, Arial, sans-serif;  
+}
+
+/* HEADER BEGINNING */
+.head-line {
+    display: flex;                          
+    justify-content: space-between;
+}
+
+.head-line > div {
+    width: 100%;
+    
+}
+
+.main-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-logo img {
+    width: 300px;
+    height: 70px;
+    margin-top: 1rem;
+}
+
+.secondary-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+    margin-top: 1rem;
+    
+}
+.secondary-nav-bar > a {
+    font-style: normal;
+    letter-spacing: normal;
+    line-break: auto;
+    line-height: 1.27em;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    overflow-wrap: normal;
+    min-width: 2.5rem;
+    margin-left: 1rem;
+    color:var(--cor1);
+}
+.secondary-nav-bar > a:hover {
+    text-decoration: underline;
+}
+.secondary-nav-bar .sub {
+    background-color: var(--cor3);
+    padding: 6px 20px;
+    border-radius: 2px;
+    color: #fff;
+}
+.secondary-nav-bar .sub:hover {
+    text-decoration: none;
+}
+
+.lupa {
+    height: 18px;
+    margin-left: 10px;
+}
+
+
+
+/* HEADER ENDING */
+
+
+/* Media Queries */
+
+/* HEADER BEGINNING */
+
+@media screen and (min-width: 1280px) {
+    .main-logo img {
+        size: 4rem;
+    }
+}
+
+@media  screen and (min-width: 1024px) {
+    .main-logo img {
+        size: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main-logo img {
+        size: 1.5rem;
+    }
+}
